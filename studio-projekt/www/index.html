@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeitenTracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ZeitenTracker</h1>
+    </header>
+
+    <main>
+        <section id="control">
+            <button id="toggleBtn" class="big-btn">Start</button>
+            <div id="currentProject">
+                <label for="projectSelect">Projekt:</label>
+                <select id="projectSelect">
+                    <option value="Allgemein">Allgemein</option>
+                    <option value="Projekt A">Projekt A</option>
+                    <option value="Projekt B">Projekt B</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="manual">
+            <h2>Manuelle Eingabe</h2>
+            <label for="manualDate">Datum:</label>
+            <input type="date" id="manualDate">
+            <label for="manualStart">Start:</label>
+            <input type="time" id="manualStart">
+            <label for="manualEnd">Ende:</label>
+            <input type="time" id="manualEnd">
+            <label for="manualProject">Projekt:</label>
+            <select id="manualProject">
+                <option value="Allgemein">Allgemein</option>
+                <option value="Projekt A">Projekt A</option>
+                <option value="Projekt B">Projekt B</option>
+            </select>
+            <button id="addManualBtn">Eintrag hinzufügen</button>
+        </section>
+
+        <section id="overview">
+            <h2>Tages‑/Wochenbericht</h2>
+            <table id="entriesTable">
+                <thead>
+                    <tr><th>Datum</th><th>Start</th><th>Ende</th><th>Dauer</th><th>Projekt</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="exportCsvBtn">Export CSV</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

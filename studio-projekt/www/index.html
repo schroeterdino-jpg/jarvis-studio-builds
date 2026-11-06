@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Zeiterfassung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zeiterfassung</h1>
+    </header>
+
+    <main>
+        <section id="controls">
+            <button id="startBtn" class="bigBtn">Start</button>
+            <button id="stopBtn" class="bigBtn" disabled>Stopp</button>
+            <div id="timerDisplay">00:00:00</div>
+        </section>
+
+        <section id="listSection">
+            <h2>Erfasste Arbeitszeiten</h2>
+            <ul id="timeList"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
